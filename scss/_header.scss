@@ -3,62 +3,68 @@
     left: 0;
     top: 0;
     position: fixed;
-    background-color: rgba(14, 8, 36, 1);
+    background-color: transparent;
     z-index: 9;
+    padding: 0 15px;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     &.fixed {
-        background-color: rgba(14, 8, 36, 1);
+        background-color: rgba(0, 0, 0, 0.9);
         -webkit-transition: all 0.4s ease;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
+        .navbar {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
     }
-  }
-  .navbar-light {
-    .navbar-nav {
-        .nav-link {
-            color: rgba(255, 255, 255, 0.3);
-            font-weight: 500;
-            font-size: 19px;
-            position: relative;
-            display: block;
-            -webkit-transition: all 0.4s ease;
-            -moz-transition: all 0.4s ease;
-            -o-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-            &:after {
-                content: "";
-                width: 0%;
-                position: absolute;
-                left: 0;
-                bottom: 0px;
-                height: 2px;
-                background-color: rgba(255, 255, 255, 1);
-                -webkit-transition: all 0.4s ease;
-                -moz-transition: all 0.4s ease;
-                -o-transition: all 0.4s ease;
-                transition: all 0.4s ease;
-            }
-            &:hover {
-                color: rgba(255, 255, 255, 1);
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: 500;
+                font-size: 19px;
+                position: relative;
+                display: block;
                 -webkit-transition: all 0.4s ease;
                 -moz-transition: all 0.4s ease;
                 -o-transition: all 0.4s ease;
                 transition: all 0.4s ease;
                 &:after {
-                    width: 100%;
+                    content: "";
+                    width: 0%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0px;
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 1);
                     -webkit-transition: all 0.4s ease;
                     -moz-transition: all 0.4s ease;
                     -o-transition: all 0.4s ease;
                     transition: all 0.4s ease;
                 }
+                &:hover {
+                    color: rgba(255, 255, 255, 1);
+                    -webkit-transition: all 0.4s ease;
+                    -moz-transition: all 0.4s ease;
+                    -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease;
+                    &:after {
+                        width: 100%;
+                        -webkit-transition: all 0.4s ease;
+                        -moz-transition: all 0.4s ease;
+                        -o-transition: all 0.4s ease;
+                        transition: all 0.4s ease;
+                    }
+                }
             }
         }
     }
   }
+
   .connectBtn {
       a {
         transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;

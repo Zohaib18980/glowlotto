@@ -4,7 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Glow Lotto</title>
+    <title>TEDCRYPTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
@@ -18,7 +21,7 @@
             
           <a class="navbar-brand" href="#">
               <h1>
-                <img src="images/glow-lotto-logo.svg" alt="" width="119" />
+                <img src="images/logo.png" alt="" width="119" />
               </h1>
           </a>
 
@@ -55,11 +58,151 @@
         </nav>
       </div>
     </div>
+    <div class="heading banner">
+      <div class="container-fluid">
+        <h2>This week</h2>
+      </div>
+    </div>
+    <section class="week-jackpot">
+      <div class="container-fluid clearfix">
+        <div class="jackpot-bg">
+          <img src="./images/banner_bg.png" />
+        </div>
+        <div class="coin1">
+          <img src="./images/coin.png" />
+        </div>
+        <div class="coin2">
+          <img src="./images/coin.png" />
+        </div>
+        <div class="jackpot-left">
+          <h4>The Week's Jackpot</h4>
+          <h1>33,940.82 <span>UST</span></h1>
+        </div>
+        <div class="jackpot-right">
+          <h4>Next lottery starts in</h4>
+          <div id="timer">
+            <div class="number-list">
+              <div class="item" data-days="">00</div> :
+              <div class="item" data-hours="">00</div> :
+              <div class="item" data-minutes="">00</div> :
+              <div class="item" data-seconds="">00</div>
+            </div>
+            <div class="unit-list">
+              <div class="item">Days</div>
+              <div class="item">Hours</div>
+              <div class="item">Minutes</div>
+              <div class="item">Seconds</div>
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>
 
-    
+    <section class="statistics">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="stats-inner">
+              <div class="stamp">
+                <img src="./images/yellow-coin.png" />
+              </div>
+              <h5>Your Account</h5>
+              <h2>357.28 <span>UST</span></h2>
+              <h4>23% APY</h4>
+              <a href="" class="deposit-btn">Deposit For Tickets</a>
+              <a href="" class="withdraw-btn">Withdraw</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="stats-inner">
+              <div class="stamp">
+                <img src="./images/bonus.png" />
+              </div>
+              <h5>Claimable Bonus</h5>
+              <h2>5.57 <span>GLOW</span></h2>
+              <a href="" class="withdraw-btn">Claim Now</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="stats-inner">
+              <div class="stamp">
+                <img src="./images/learn.png" style="width: 80px;" />
+              </div>
+              <h5>Your Tickets</h5>
+              <h2>13 <span></span></h2>
+              <a href="" class="withdraw-btn">Get Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="heading">
+      <div class="container-fluid">
+        <h2>Last Week's Lottery</h2>
+      </div>
+    </div>
+    <section class="week-lottery">
+      <div class="container-fluid clearfix">
+        <div class="jackpot-bg">
+          <img src="./images/lottery_bg.png" />
+        </div>
+        <div class="jackpot-left">
+          <h4>Last Week's Prize</h4>
+          <h1>1288.95 <span>UST</span></h1>
+        </div>
+        <div class="jackpot-right clearfix">
+          <div class="combination">
+            <h4>Last Week's Winning combination</h4>
+            <ul>
+              <li>13</li>
+              <li>4</li>
+              <li>12</li>
+              <li>21</li>
+              <li>9</li>
+              <li>5</li>
+            </ul>
+          </div>
+          <div class="ticket">
+            <a href="" class="ticket-btn">Get Tickets</a>
+          </div>
+        </div>   
+      </div>
+    </section>
+
+    <div class="heading">
+      <div class="container-fluid">
+        <h2>Get the most out of Glow</h2>
+      </div>
+    </div>
+
+    <section class="outglow">
+      <div class="container-fluid">
+        <div class="outglow-inner clearfix">
+          <div class="glow-left">
+            <h2>Learn</h2>
+            <p>Know all the ins and outs of Glow to maximize your earnings potential!</p>
+            <a href="">Read Docs</a>
+          </div>
+          <div class="glow-right">
+            <img src="./images/learn.png" />
+          </div>
+        </div>
+        <div class="outglow-inner clearfix">
+          <div class="glow-left">
+            <h2>Buy GLOW</h2>
+            <p>Get GLOW tokens and help shape the future of Glow’s Yield Ecosystem!</p>
+            <a href="">Buy GLOW</a>
+          </div>
+          <div class="glow-right">
+            <img src="./images/bonus.png" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/custom.js"></script>
 </body>
 </html>

@@ -1,25 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
 #main-header {
   width: 100%;
   left: 0;
   top: 0;
   position: fixed;
-  background-color: rgb(14, 8, 36);
+  background-color: transparent;
   z-index: 9;
+  padding: 0 15px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 #main-header.fixed {
-  background-color: rgb(14, 8, 36);
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.3);
+#main-header.fixed .navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#main-header .navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 500;
   font-size: 19px;
   position: relative;
@@ -29,7 +34,7 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.navbar-light .navbar-nav .nav-link:after {
+#main-header .navbar-light .navbar-nav .nav-link:after {
   content: "";
   width: 0%;
   position: absolute;
@@ -42,14 +47,14 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover {
+#main-header .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(255, 255, 255);
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover:after {
+#main-header .navbar-light .navbar-nav .nav-link:hover:after {
   width: 100%;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -129,6 +134,508 @@
   .navbar-nav .nav-item:last-child {
     padding-left: 30px;
   }
+}
+body {
+  background-color: transparent;
+  background-image: url(../images/body-bg.png);
+  background-position: 0px 0px;
+  background-size: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading.banner {
+  margin-top: 200px;
+}
+.heading h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+section.week-jackpot {
+  margin-bottom: 200px;
+  position: relative;
+}
+section.week-jackpot .container-fluid {
+  position: relative;
+}
+section.week-jackpot .jackpot-bg {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: calc(100% - 60px);
+}
+section.week-jackpot .jackpot-bg img {
+  width: 100%;
+}
+section.week-jackpot .coin1 {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  animation: move1 8s infinite;
+}
+section.week-jackpot .coin1 img {
+  width: 150px;
+}
+section.week-jackpot .coin2 {
+  position: absolute;
+  left: 46%;
+  top: 130px;
+  animation: move2 8s infinite;
+}
+section.week-jackpot .coin2 img {
+  width: 190px;
+  transform: rotate(-45deg);
+}
+section.week-jackpot .jackpot-left {
+  float: left;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 80px;
+}
+section.week-jackpot .jackpot-left h4 {
+  color: #fff;
+  font-size: 20px;
+}
+section.week-jackpot .jackpot-left h1 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 900;
+}
+section.week-jackpot .jackpot-left h1 span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+section.week-jackpot .jackpot-right {
+  float: right;
+  position: relative;
+  padding-top: 100px;
+  padding-right: 80px;
+}
+section.week-jackpot .jackpot-right h4 {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+section.week-jackpot .jackpot-right #timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+section.week-jackpot .jackpot-right .number-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 33px;
+  color: #fff;
+  font-weight: 400;
+}
+section.week-jackpot .jackpot-right .number-list .item {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: #fff;
+  font-weight: 900;
+  font-family: sans-serif;
+  padding: 10px;
+  background-color: #000;
+}
+section.week-jackpot .jackpot-right .unit-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+section.week-jackpot .jackpot-right .unit-list .item {
+  width: 72px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+section.week-jackpot .jackpot-right .timer-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #0B2039;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+@keyframes move1 {
+  0% {
+    top: -50px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+@keyframes move2 {
+  0% {
+    top: 130px;
+  }
+  50% {
+    top: 160px;
+  }
+  100% {
+    top: 130px;
+  }
+}
+@media (max-width: 1400px) {
+  section.week-jackpot .jackpot-left,
+section.week-jackpot .jackpot-right {
+    padding-top: 50px;
+  }
+
+  section.week-jackpot .coin1 img {
+    width: 130px;
+  }
+
+  section.week-jackpot .coin2 img {
+    width: 150px;
+  }
+
+  section.week-jackpot .jackpot-left h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  section.week-jackpot .coin1 {
+    left: 47%;
+  }
+
+  section.week-jackpot .coin2 {
+    left: 44%;
+  }
+}
+@media (max-width: 991px) {
+  section.week-jackpot .jackpot-bg,
+section.week-jackpot .coin1,
+section.week-jackpot .coin2 {
+    display: none;
+  }
+
+  section.week-jackpot {
+    background-color: #A53EB8;
+  }
+
+  section.week-jackpot .jackpot-left {
+    padding-left: 0;
+    float: none;
+  }
+
+  section.week-jackpot .jackpot-right {
+    padding-left: 0;
+    float: none;
+    padding-bottom: 40px;
+  }
+
+  section.week-jackpot .jackpot-right #timer {
+    align-items: flex-start;
+  }
+
+  section.week-jackpot .jackpot-right .number-list {
+    justify-content: flex-start;
+  }
+
+  section.week-jackpot .jackpot-right .unit-list {
+    justify-content: flex-start;
+  }
+
+  .heading h2 {
+    font-size: 30px;
+  }
+}
+section.week-lottery {
+  margin-bottom: 200px;
+  position: relative;
+}
+section.week-lottery .container-fluid {
+  position: relative;
+}
+section.week-lottery .jackpot-bg {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: calc(100% - 60px);
+}
+section.week-lottery .jackpot-bg img {
+  width: 100%;
+}
+section.week-lottery .jackpot-left {
+  float: left;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 80px;
+}
+section.week-lottery .jackpot-left h4 {
+  color: #fff;
+  font-size: 20px;
+}
+section.week-lottery .jackpot-left h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+}
+section.week-lottery .jackpot-left h1 span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+section.week-lottery .jackpot-right {
+  float: right;
+  position: relative;
+  padding-top: 100px;
+  padding-right: 80px;
+}
+section.week-lottery .jackpot-right .combination {
+  float: left;
+  margin-right: 50px;
+}
+section.week-lottery .jackpot-right .combination h4 {
+  color: #fff;
+  font-size: 20px;
+}
+section.week-lottery .jackpot-right .combination ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+section.week-lottery .jackpot-right .combination ul li {
+  list-style: none;
+  margin-right: 10px;
+  background-image: url(../images/combine_bg.png);
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  padding: 25px 29px;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+section.week-lottery .jackpot-right .ticket {
+  float: left;
+  padding-top: 40px;
+}
+section.week-lottery .jackpot-right .ticket a {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+}
+section.week-lottery .jackpot-right .ticket a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 1400px) {
+  section.week-lottery .jackpot-left,
+section.week-lottery .jackpot-right {
+    padding-top: 50px;
+  }
+
+  section.week-lottery .jackpot-left h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  section.week-lottery .jackpot-bg {
+    display: none;
+  }
+
+  section.week-lottery {
+    padding-bottom: 40px;
+    background: rgb(115, 74, 224);
+    background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+  }
+
+  section.week-lottery .jackpot-left,
+section.week-lottery .jackpot-right {
+    padding-left: 0;
+    float: none;
+  }
+}
+@media (max-width: 991px) {
+  section.week-lottery .jackpot-bg {
+    display: none;
+  }
+
+  section.week-lottery {
+    background: rgb(115, 74, 224);
+    background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+  }
+
+  section.week-lottery .jackpot-right {
+    padding-right: 0;
+  }
+
+  section.week-lottery .jackpot-right .combination {
+    margin-right: 0;
+  }
+
+  section.week-lottery .jackpot-right .combination ul li {
+    margin-right: 0;
+    width: 54px;
+    height: 54px;
+    background-size: 100%;
+    font-size: 20px;
+    padding: 13px;
+  }
+}
+section.statistics {
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+section.statistics .stats-inner {
+  position: relative;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  background: rgb(115, 74, 224);
+  min-height: 344px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+}
+section.statistics .stats-inner .stamp {
+  position: absolute;
+  right: 30px;
+  top: -50px;
+  animation: move 5s infinite;
+}
+section.statistics .stats-inner .stamp img {
+  width: 100px;
+}
+section.statistics .stats-inner h5 {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+section.statistics .stats-inner h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+  margin-top: 50px;
+}
+section.statistics .stats-inner h2 span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+section.statistics .stats-inner h4 {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+section.statistics .stats-inner a.deposit-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #A53EB8;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+section.statistics .stats-inner a.withdraw-btn {
+  display: block;
+  width: calc(100% - 60px);
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+section.statistics .stats-inner a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@keyframes move {
+  0% {
+    top: -50px;
+  }
+  50% {
+    top: -30px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+section.outglow {
+  padding: 0 15px;
+}
+section.outglow .outglow-inner {
+  position: relative;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  background: rgb(115, 74, 224);
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+}
+section.outglow .outglow-inner .glow-left {
+  float: left;
+}
+section.outglow .outglow-inner .glow-right {
+  float: right;
+}
+section.outglow .outglow-inner h2 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+section.outglow .outglow-inner p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+section.outglow .outglow-inner a {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
