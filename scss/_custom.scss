@@ -478,3 +478,151 @@ section {
         }
     }
 }
+
+section {
+    &.prizes {
+        padding: 0 15px;
+        .status-filter {
+            margin: 50px 0 20px 0;
+            .form-check {
+                float: left;
+                margin-right: 50px;
+                padding-left: 0;
+                label {
+                    color: #fff;
+                    span {
+                        cursor: pointer;
+                        padding: 8px 15px;
+                        border: 1px solid rgba(255,255,255,0.3);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .prizes-head {
+            p {
+                padding: 15px;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+        .prizes-data {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgb(115,74,224);
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, rgba(115,74,224,1) 0%, rgba(115,74,224,1) 35%, rgba(115,74,223,1) 100%);
+            p {
+                padding: 20px 0;
+                font-size: 15px;
+                color: #fff;
+                margin: 0;
+            }
+            .combination {
+                float: left;
+                margin-right: 50px;
+                
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    li {
+                        list-style: none;
+                        background-image: url(../images/combine_bg.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        width: 60px;
+                        height: 60px;
+                        padding: 17px 21px;
+                        font-size: 20px;
+                        color: #fff;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    section {
+        &.prizes {
+            .status-filter {
+                .form-check {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .prizes-head {
+                display: none;
+            }
+            .prizes-data {
+                .combination ul li {
+                    margin-right: 0;
+                    width: 48px;
+                    height: 48px;
+                    background-size: 100%;
+                    font-size: 20px;
+                    padding: 10px;    
+                }
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    section {
+        &.prizes {
+            .status-filter {
+                .form-check {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="radio"]{
+	position: absolute;
+	right: 9000px;
+}
+
+input[type="radio"] + .label-text:before{
+	content: "\f10c";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+input[type="radio"]:checked + .label-text:before{
+	content: "\f192";
+	color: rgb(115,74,224);
+	animation: effect 250ms ease-in;
+}
+
+input[type="radio"]:disabled + .label-text{
+	color: #aaa;
+}
+
+input[type="radio"]:disabled + .label-text:before{
+	content: "\f111";
+	color: #ccc;
+}
+
+@keyframes effect{
+	0%{transform: scale(0);}
+	25%{transform: scale(1.3);}
+	75%{transform: scale(1.4);}
+	100%{transform: scale(1);}
+}
