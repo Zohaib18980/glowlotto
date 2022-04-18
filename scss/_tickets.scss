@@ -1,0 +1,149 @@
+
+
+section {
+    &.ticket-filters {
+        padding: 0 15px;
+        margin-bottom: 30px;
+        .filter-left {
+            float: left;
+            p {
+                font-size: 15px;
+                color: #fff;
+                margin-top: 20px;
+                padding-left: 15px;
+            }
+        }
+        .filter-right {
+            float: right;
+            .number {
+                font-size: 18px;
+                color: #fff;
+                margin-right: 50px;
+                float: left;
+                padding: 10px 0;
+                svg {
+                    fill: #fff !important;
+                    margin-right: 15px;
+                }
+            }
+            a {
+                display: inline-block;
+                font-size: 18px;
+                padding: 10px 30px;
+                border-radius: 30px;
+                color: #fff;
+                background-color: rgb(115,74,224);
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    &.all-tickets {
+        padding: 0 15px;
+        .ticket-detail {
+            position: relative;
+            margin-bottom: 20px;
+            @media (max-width:480px) {
+                padding: 30px;
+                background-color: rgb(115,74,224);
+                border-radius: 30px;
+            }
+            .ticket-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                img {
+                    width: 100%;
+                }
+                @media (max-width:480px) {
+                    display: none;
+                }
+            }
+            .ticket-left {
+                position: relative;
+                float: left;
+                .combination {
+                    float: left;
+                    margin-right: 50px;
+                    padding: 36px 30px;
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        li {
+                            list-style: none;
+                            background-image: url(../images/combine_bg.png);
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            width: 60px;
+                            height: 60px;
+                            padding: 17px 21px;
+                            font-size: 20px;
+                            color: #fff;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                    }
+                    @media (max-width:767px) {
+                        padding: 20px;
+                        margin-right: 0;
+                        ul li {
+                            margin-right: 0;
+                            width: 48px;
+                            height: 48px;
+                            background-size: 100%;
+                            font-size: 20px;
+                            padding: 10px;    
+                        }
+                    }
+                }
+            }
+            .ticket-right {
+                position: relative;
+                float: right;
+                p {
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 15px;
+                }
+                @media (max-width:480px) {
+                    float: none;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &.pagination {
+        padding: 0 15px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        ul {
+            float: right;
+            padding: 0;
+            margin: 0;
+            li {
+                float: left;
+                margin-left: 10px;
+                list-style: none;
+                a {
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgb(115,74,224);
+                    color: #fff;
+                    font-size: 15px;
+                    display: inline-block;
+                    border-radius: 100%;
+                    text-align: center;
+                    padding: 5px;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
