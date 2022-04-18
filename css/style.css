@@ -926,4 +926,83 @@ section.pagination ul li a:hover {
   opacity: 0.6;
 }
 
+section.deposit {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+section.deposit form {
+  width: 550px;
+  max-width: 550px;
+}
+section.deposit h2 {
+  text-align: center;
+}
+section.deposit .info-msg {
+  background-color: rgb(115, 74, 224);
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+section.deposit .info-msg i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+section.deposit .form-group {
+  position: relative;
+  margin-bottom: 80px;
+}
+section.deposit label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+section.deposit input {
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(115, 74, 224, 0.2);
+  border: 1px solid rgba(115, 74, 224, 0.2);
+  border-radius: 30px;
+}
+section.deposit input:focus {
+  background-color: rgba(115, 74, 224, 0.2);
+  border: 1px solid rgba(115, 74, 224, 0.2);
+}
+section.deposit input.submit-btn {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+section.deposit input.submit-btn:hover {
+  opacity: 0.6;
+}
+section.deposit input.submit-btn + p {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(115, 74, 224, 0.6);
+  margin-top: 10px;
+}
+section.deposit .infobox {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 7px;
+}
+section.deposit .infobox i {
+  cursor: pointer;
+}
+section.deposit .snap {
+  position: absolute;
+  right: 30px;
+  top: 42px;
+  font-size: 14px;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

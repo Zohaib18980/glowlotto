@@ -80,3 +80,6 @@
         $("#main-header").removeClass("fixed");
     }
   });
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });

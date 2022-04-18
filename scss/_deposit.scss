@@ -1,0 +1,81 @@
+section{
+    &.deposit {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        form {
+            width: 550px;
+            max-width: 550px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .info-msg {
+            background-color: rgb(115,74,224);
+            font-size: 13px;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 30px;
+            display: flex;
+            margin-bottom: 30px;
+            i {
+                margin-right: 20px;
+                font-size: 20px;
+            }
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 80px;
+        }
+        label {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        input {
+            font-size: 14px;
+            color: #fff;
+            background-color: rgba(115,74,224, 0.2);
+            border: 1px solid rgba(115,74,224, 0.2);
+            border-radius: 30px;
+            &:focus {
+                background-color: rgba(115,74,224, 0.2);
+                border: 1px solid rgba(115,74,224, 0.2);
+            }
+            &.submit-btn {
+                background-color: #fff;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                &:hover {
+                    opacity: 0.6;
+                }
+                & + p {
+                    font-size: 12px;
+                    text-align: center;
+                    color: rgba(115,74,224, 0.6);
+                    margin-top: 10px;
+                }
+            }
+        }
+        .infobox {
+            font-size: 12px;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            margin-top: 7px;
+            i {
+                cursor: pointer;
+            }
+        }
+        .snap {
+            position: absolute;
+            right: 30px;
+            top: 42px;
+            font-size: 14px;
+            color: #fff;
+        }
+        
+    }
+}
