@@ -83,3 +83,8 @@
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
   });
+
+  $(".prizes-data").click(function(){
+    $(this).find($(".awardedTicket")).slideToggle();
+    $(this).find($(".fa-angle-down")).toggleClass("active");
+  })

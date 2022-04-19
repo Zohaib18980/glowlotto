@@ -50,6 +50,9 @@ section {
                 background-color: rgb(115,74,224);
                 border-radius: 30px;
             }
+            &.inactive{
+                opacity: 0.6;
+            }
             .ticket-bg {
                 position: absolute;
                 top: 0;

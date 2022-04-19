@@ -12,6 +12,11 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+@media (max-width: 992px) {
+  #main-header {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
 #main-header.fixed {
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: all 0.4s ease;
@@ -154,12 +159,12 @@ body {
   padding-left: 15px;
 }
 
-input[type=radio] {
+input[type=checkbox] {
   position: absolute;
   right: 9000px;
 }
 
-input[type=radio] + .label-text:before {
+input[type=checkbox] + .label-text:before {
   content: "\f10c";
   font-family: "FontAwesome";
   speak: none;
@@ -174,17 +179,17 @@ input[type=radio] + .label-text:before {
   margin-right: 5px;
 }
 
-input[type=radio]:checked + .label-text:before {
+input[type=checkbox]:checked + .label-text:before {
   content: "\f192";
   color: rgb(115, 74, 224);
   animation: effect 250ms ease-in;
 }
 
-input[type=radio]:disabled + .label-text {
+input[type=checkbox]:disabled + .label-text {
   color: #aaa;
 }
 
-input[type=radio]:disabled + .label-text:before {
+input[type=checkbox]:disabled + .label-text:before {
   content: "\f111";
   color: #ccc;
 }
@@ -725,6 +730,14 @@ section.prizes .prizes-data p {
   color: #fff;
   margin: 0;
 }
+section.prizes .prizes-data p .fa-angle-down {
+  margin-left: 30px;
+  transition: all 0.4s ease;
+}
+section.prizes .prizes-data p .fa-angle-down.active {
+  transition: all 0.4s ease;
+  transform: rotate(180deg);
+}
 section.prizes .prizes-data .combination {
   float: left;
   margin-right: 50px;
@@ -746,6 +759,21 @@ section.prizes .prizes-data .combination ul li {
   color: #fff;
   font-weight: 400;
   text-align: center;
+}
+section.prizes .prizes-data .awardedTicket {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 15px 15px;
+  display: none;
+}
+section.prizes .prizes-data .awardedTicket h3 {
+  font-size: 14px;
+  color: #fff;
+}
+section.prizes .prizes-data .awardedTicket h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 900;
 }
 
 @media (max-width: 767px) {
@@ -824,6 +852,9 @@ section.all-tickets .ticket-detail {
     background-color: rgb(115, 74, 224);
     border-radius: 30px;
   }
+}
+section.all-tickets .ticket-detail.inactive {
+  opacity: 0.6;
 }
 section.all-tickets .ticket-detail .ticket-bg {
   position: absolute;
@@ -942,7 +973,7 @@ section.deposit h2 {
 }
 section.deposit .info-msg {
   background-color: rgb(115, 74, 224);
-  font-size: 13px;
+  font-size: 15px;
   color: #fff;
   padding: 10px 30px;
   border-radius: 30px;
@@ -963,7 +994,7 @@ section.deposit label {
   margin-bottom: 10px;
 }
 section.deposit input {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   background-color: rgba(115, 74, 224, 0.2);
   border: 1px solid rgba(115, 74, 224, 0.2);
@@ -983,13 +1014,13 @@ section.deposit input.submit-btn:hover {
   opacity: 0.6;
 }
 section.deposit input.submit-btn + p {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   color: rgba(115, 74, 224, 0.6);
   margin-top: 10px;
 }
 section.deposit .infobox {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 7px;
@@ -1001,8 +1032,54 @@ section.deposit .snap {
   position: absolute;
   right: 30px;
   top: 42px;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
+}
+
+section.connected {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+section.connected form {
+  width: 550px;
+  max-width: 550px;
+  text-align: center;
+}
+section.connected form h5 {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.connected form input {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(115, 74, 224, 0.2);
+  border: 1px solid rgba(115, 74, 224, 0.2);
+  border-radius: 30px;
+}
+section.connected form input:focus {
+  background-color: rgba(115, 74, 224, 0.2);
+  border: 1px solid rgba(115, 74, 224, 0.2);
+}
+section.connected form input.submit-btn {
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  padding: 10px 30px;
+}
+section.connected form input.submit-btn:hover {
+  opacity: 0.6;
+}
+section.connected form input.submit-btn + p {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(115, 74, 224, 0.6);
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
