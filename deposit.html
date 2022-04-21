@@ -15,38 +15,89 @@
 
   </head>
   <body>
+    
     <section class="deposit">
-      <form>
-        <div class="heading">
-          <h2>Deposit</h2>
-          <div class="info-msg">
-            <i class="fa fa-info-circle" aria-hidden="true"></i>
-            Deposit another 21.28 UST to get an extra lottery ticket!
-          </div>
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6">
-                <label>Amount to Deposit</label>
-                <input type="text" class="form-control" value="0" />
-                <span class="snap">UST</span> 
-                <div class="infobox">
-                  3.72 Available (Max)
-                  <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Tooltip Text Here" aria-hidden="true"></i>
+      <div class="deposit-top">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="deposit-tab" data-toggle="tab" href="#deposit" role="tab" aria-controls="home" aria-selected="true">Deposit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="redelegate-tab" data-toggle="tab" href="#redelegate" role="tab" aria-controls="profile" aria-selected="false">Redelegate</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="deposit" role="tabpanel" aria-labelledby="home-tab">
+          <form>
+            <div class="heading">
+              <h2>Deposit</h2>
+              <div class="info-msg">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Deposit another 21.28 UST to get an extra lottery ticket!
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Amount to Deposit</label>
+                    <input type="text" class="form-control" value="0" />
+                    <span class="snap">UST</span> 
+                    <div class="infobox">
+                      3.72 Available (Max)
+                      <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Tooltip Text Here" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label>Number of Tickets</label>
+                    <input type="text" class="form-control" value="0" />
+                    <span class="snap">Tickets</span>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <label>Number of Tickets</label>
-                <input type="text" class="form-control" value="0" />
-                <span class="snap">Tickets</span>
+              <div class="submitBtn">
+                <input type="submit" class="btn submit-btn" value="Next" />
+                <p>Deposit in the next a day to have a chance at winning 336666.36 UST! </p>
               </div>
             </div>
-          </div>
-          <div class="submitBtn">
-            <input type="submit" class="btn submit-btn" value="Next" />
-            <p>Deposit in the next a day to have a chance at winning 336666.36 UST! </p>
-          </div>
+          </form>
         </div>
-      </form>
+        <div class="tab-pane fade" id="redelegate" role="tabpanel" aria-labelledby="profile-tab">
+          <form>
+            <div class="heading">
+              <h2>Redelegate</h2>
+              <div class="info-msg">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Deposit another 21.28 UST to get an extra lottery ticket!
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>From</label>
+                    <select class="form-control">
+                      <option>option 1</option>
+                      <option>option 1</option>
+                      <option>option 1</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label>Amount</label>
+                    <input type="text" class="form-control" value="0" />
+                    <span class="snap">UST</span> 
+                    <div class="infobox">
+                      700 Available (Max)
+                      <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Tooltip Text Here" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submitBtn">
+                <input type="submit" class="btn submit-btn" value="Redelegate" />
+                <p>Deposit in the next a day to have a chance at winning 336666.36 UST! </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

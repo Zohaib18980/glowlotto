@@ -692,6 +692,67 @@ section.outglow .outglow-inner a {
   margin-bottom: 10px;
 }
 
+section.currencies {
+  padding: 0 15px;
+  margin-top: 50px;
+}
+section.currencies .inner-block {
+  padding: 30px;
+  border-radius: 15px;
+  background: rgb(115, 74, 224);
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+}
+section.currencies .inner-block .icon {
+  width: 120px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+section.currencies .inner-block .icon img {
+  width: 100%;
+}
+section.currencies .inner-block h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+section.currencies .inner-block h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+section.currencies .inner-block .part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+section.currencies .inner-block .part h4 {
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+}
+section.currencies .inner-block .part h4 i {
+  margin-right: 10px;
+}
+section.currencies .inner-block .part a {
+  display: block;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: rgb(115, 74, 224);
+  background-color: rgb(255, 255, 255);
+}
+section.currencies .inner-block .part a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
 section.prizes {
   padding: 0 15px;
 }
@@ -963,6 +1024,22 @@ section.deposit {
   justify-content: center;
   align-items: center;
   padding-left: 15px;
+  flex-direction: column;
+}
+section.deposit .deposit-top {
+  width: 550px;
+  max-width: 550px;
+  margin-bottom: 30px;
+}
+section.deposit .deposit-top ul li {
+  width: 50%;
+  text-align: center;
+}
+section.deposit .deposit-top ul li a {
+  color: #fff;
+}
+section.deposit .deposit-top ul li a:hover {
+  border: none;
 }
 section.deposit form {
   width: 550px;
@@ -1018,6 +1095,13 @@ section.deposit input.submit-btn + p {
   text-align: center;
   color: rgba(115, 74, 224, 0.6);
   margin-top: 10px;
+}
+section.deposit select {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(115, 74, 224, 0.2);
+  border: 1px solid rgba(115, 74, 224, 0.2);
+  border-radius: 30px;
 }
 section.deposit .infobox {
   font-size: 14px;
