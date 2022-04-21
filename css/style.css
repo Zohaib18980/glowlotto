@@ -1024,17 +1024,24 @@ section.pagination ul li a:hover {
 }
 
 section.deposit {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 15px;
   flex-direction: column;
+  padding-top: 30px;
 }
 section.deposit .deposit-top {
   width: 550px;
   max-width: 550px;
   margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  section.deposit .deposit-top {
+    width: 380px;
+    max-width: 380px;
+  }
 }
 section.deposit .deposit-top ul li {
   width: 50%;
@@ -1049,6 +1056,12 @@ section.deposit .deposit-top ul li a:hover {
 section.deposit form {
   width: 550px;
   max-width: 550px;
+}
+@media (max-width: 600px) {
+  section.deposit form {
+    width: 380px;
+    max-width: 380px;
+  }
 }
 section.deposit h2 {
   text-align: center;

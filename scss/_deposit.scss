@@ -1,16 +1,21 @@
 section{
     
     &.deposit {
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-left: 15px;
         flex-direction: column;
+        padding-top: 30px;
         .deposit-top {
             width: 550px;
             max-width: 550px;
             margin-bottom: 30px;
+            @media (max-width:600px) { 
+                width: 380px;
+                max-width: 380px;
+            }
             ul {
                 li {
                     width: 50%;
@@ -27,6 +32,10 @@ section{
         form {
             width: 550px;
             max-width: 550px;
+            @media (max-width:600px) { 
+                width: 380px;
+                max-width: 380px;
+            }
         }
         h2 {
             text-align: center;
