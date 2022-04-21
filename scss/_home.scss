@@ -7,7 +7,13 @@ section {
             border-radius: 15px;
             background: rgb(115,74,224);
             margin-bottom: 20px;
-            background: linear-gradient(90deg, rgba(115,74,224,1) 0%, rgba(115,74,224,1) 35%, rgba(115,74,223,1) 100%);
+            // background: linear-gradient(90deg, rgba(115,74,224,1) 0%, rgba(115,74,224,1) 35%, rgba(115,74,223,1) 100%);
+            &.grey{
+                background-color: #343444;
+                .icon {
+                    background: rgba(255,255,255, 0.1);
+                }
+            }
             .icon {
                 width: 120px;
                 margin: 0 auto;

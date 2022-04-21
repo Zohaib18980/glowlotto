@@ -701,7 +701,12 @@ section.currencies .inner-block {
   border-radius: 15px;
   background: rgb(115, 74, 224);
   margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(115, 74, 224) 0%, rgb(115, 74, 224) 35%, rgb(115, 74, 223) 100%);
+}
+section.currencies .inner-block.grey {
+  background-color: #343444;
+}
+section.currencies .inner-block.grey .icon {
+  background: rgba(255, 255, 255, 0.1);
 }
 section.currencies .inner-block .icon {
   width: 120px;
